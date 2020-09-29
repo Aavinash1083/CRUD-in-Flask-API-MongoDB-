@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Get Records</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #00c9ff, #92fe9d);
+        }
+    </style
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md d-flex justify-content-center">
+                <h2>Single record Information</h2>
+            </div>
+        </div>
+    </div>
+    <!-- <form action = "{{url_for('saveDetails')}}" method="post">  
+    <table>  
+        //<tr><td>Name</td><td><input type="text" name="name"></td></tr>  
+        <tr><td>Amount</td><td><input type="number" name="amount"></td></tr>  
+        <tr><td>Months_Alloted</td><td><input type="number" name="duration"></td></tr> 
+        <tr><td>Months_Worked</td><td><input type="number" name="working_time"></td></tr>  
+        <tr><td><input type="submit" value="Submit"></td></tr>  
+    </table>  
+    </form>   -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <form action="{{url_for('viewsinglerecord')}}" method="post">
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                        <input type="number" class="form-control" name="id" id="id">
+                    </div>
+                    
+                    
+                    
+                    <button style="border: 3px solid black;"type="submit" class="btn btn-primary">Submit</button>             </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

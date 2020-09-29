@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>delete record</title>
+     <style>
+        body {
+            background: linear-gradient(to right, #8e9eab, #eef2f3);
+        }
+    </style  
+</head>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md d-flex justify-content-center">
+                <h2>Update record from the list</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <form action="/update_record" method="post">
+                    <div class="form-group">
+                       <label for="id">ID</label>
+                       <input type="number" class="form-control" name="id">
+                       </div>
+                    <div class="form-group">
+                       <label for="location">Location</label>
+                       <input type="text" class="form-control" name="location">
+                       </div>
+                    <div class="form-group">
+                       <label for="email_id">Email_id</label>
+                       <input type="text" class="form-control" name="email_id">
+                       </div>   
+                       <button style="border: 3px solid black;"type="submit" class="btn btn-primary">Submit</button>
+                </form>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

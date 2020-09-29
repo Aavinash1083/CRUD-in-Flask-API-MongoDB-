@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(to right, #8e9eab, #eef2f3);
+
+        thead {
+            font-weight: 600;
+        }
+    </style>
+    <title>List</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md d-flex justify-content-center">
+                <h3>USER Information</h3>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md">
+                <table class="table">
+                    <thead>
+                        <td><b>ID</b></td>
+                        <td>NAME</td>
+                        <td>LOCATION</td>
+                        <td>EMAIL_ID</td>
+                        
+                        
+                    </thead>
+
+                    {% for row in rows %}
+
+                    <tr>
+                        <td>{{row["ID"]}}</td>
+                        <td>{{row["NAME"]}}</td>
+                        <td>{{row["LOCATION"]}}</td>
+                        <td>{{row["EMAIL_ID"]}}</td>
+                        
+                        
+                    </tr>
+
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md d-flex justify-content-center">
+                <a style="border: 3px solid black;" class="btn btn-primary" href="/">Go back to home page</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
